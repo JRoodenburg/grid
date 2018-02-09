@@ -1,0 +1,88 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.site {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+            "title title"
+            "header header"
+            "zijbalk main"
+            "footer footer";
+}
+
+#navigation {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, auto);
+    list-style: none;
+    color: #000000;
+    font-family: 'oswald',arial,sans-serif;
+    font-size: 20px;
+}
+
+.page-titel {
+    grid-area: title;
+}
+
+.header {
+    grid-area: header;
+    margin-bottom: 10px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.hoofd-inhoud {
+    grid-area: main;
+    margin: 0 10px;
+}
+
+.zijbalk {
+    grid-area: zijbalk;
+    margin: 1em;
+}
+
+.footer {
+    grid-area: footer;
+
+}
+.block {
+    display: inline-flex;
+   padding-left: 1vw;
+}
+
+.block:first-child {
+    display: inline-flex;
+    padding-left: 0;
+}
+
+.block-footer{
+    text-align: center;
+
+    margin: 0 auto;
+}
+.block-footer img{
+    height: auto;
+    width: 100vw;
+}
+
+#login-thing {
+    background-color: #ebebeb;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 994px) {
+
+}
